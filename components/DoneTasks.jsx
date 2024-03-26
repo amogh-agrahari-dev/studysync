@@ -26,7 +26,7 @@ const DoneTasks = () => {
                 <div>
                     {task?.done && (
 
-                        <div className='text-white bg-[#0f0f0f] border-2  border-solid border-gray-500 duration-300 hover:bg-gray-950 px-5 py-3 my-4 min-w-[23rem] rounded-xl'>
+                        <div key={task?._id} className='text-white bg-[#0f0f0f] border-2  border-solid border-gray-500 duration-300 hover:bg-gray-950 px-5 py-3 my-4 min-w-[23rem] rounded-xl'>
 
                             <div className='text-xl font-bold flex items-center justify-between'>
                                 <span className='capitalize'>  {task?.title.split("", 30)}..</span>
