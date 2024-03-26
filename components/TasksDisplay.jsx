@@ -1,4 +1,4 @@
-import client from '@/config/sanity';
+
 import React, {  useState } from 'react'
 import UpcomingTasks from './UpcomingTasks';
 import DoneTasks from './DoneTasks';
