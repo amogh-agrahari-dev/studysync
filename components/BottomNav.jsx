@@ -5,50 +5,50 @@ import Link from 'next/link'
 
 
 const BottomNav = () => {
-  const {data :session} = useSession()
+  const { data: session } = useSession()
   return (
     <div className='fixed bottom-0 left-0 right-0 justify-between bg-[#0f0f0f] text-white flex items-center px-5 py-3'>
-      
+
       <div className='flex flex-col items-center'>
 
-      <UserGroupIcon className='h-7' />
+        <UserGroupIcon className='h-7' />
         <span>
-        Community
+          Community
 
         </span>
       </div>
       <div className='flex flex-col items-center'>
-<Link href={`/notes`}>
-      <BookOpenIcon className='h-7' />
-        <span>
-        Notes
+        <Link href={`/notes`}>
+          <BookOpenIcon className='h-7' />
+          <span>
+            Notes
 
-        </span>
+          </span>
         </Link>
       </div>
-      <div className='flex flex-col items-center'>
-<Link href={`/`}>
-      <HomeIcon className='h-10' />
-        <span>
-        Home
+      <Link href={`/`}>
+        <div className='flex flex-col items-center'>
+          <HomeIcon className='h-7' />
+          <span className='text-center'>
+            Home
 
-        </span>
-        </Link>
-      </div>
-      <div className='flex flex-col items-center'>
+          </span>
+        </div>
+      </Link>
       <Link href={`/tasks`}>
-        <DocumentCheckIcon className='h-7' />
-        <span>
-        Tasks
+        <div className='flex flex-col items-center'>
+          <DocumentCheckIcon className='h-7' />
+          <span>
+            Tasks
 
-        </span>
-        </Link>
-      </div>
+          </span>
+        </div>
+      </Link>
       <div className='flex flex-col items-center'>
 
-      <ClockIcon className='h-7' />
+        <ClockIcon className='h-7' />
         <span>
-        Study Time
+          Study Time
 
         </span>
       </div>
